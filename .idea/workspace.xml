@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Added List webelements">
+    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Added annotation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Craigslist/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Craigslist/SearchPriusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Craigslist/SearchPriusTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Locators/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locators/SearchPage.java" afterDir="false" />
     </list>
@@ -57,24 +58,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.craiglist [test].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.SearchPriusTest.Searching (1).executor": "Run",
-    "TestNG.SearchPriusTest.Searching.executor": "Run",
-    "TestNG.SearchPriusTest.Validation (1).executor": "Run",
-    "TestNG.SearchPriusTest.Validation.executor": "Run",
-    "TestNG.SearchPriusTest.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/RR/craiglist/craiglist/src/test/java/Craigslist",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.26034957",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.craiglist [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.SearchPriusTest.Searching (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SearchPriusTest.Searching.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SearchPriusTest.Validation (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SearchPriusTest.Validation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SearchPriusTest.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/RR/craiglist/craiglist/src/test/java/Craigslist&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.26034957&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Locators" />
@@ -85,7 +86,7 @@
       <module name="craiglist" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Craigslist.*" />
+          <option name="PATTERN" value="Base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,29 +99,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPriusTest.Searching (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="craiglist" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Craigslist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Craigslist" />
-      <option name="MAIN_CLASS_NAME" value="Craigslist.SearchPriusTest" />
-      <option name="METHOD_NAME" value="Searching" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SearchPriusTest.Searching" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="craiglist" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Craigslist.*" />
+          <option name="PATTERN" value="Base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,6 +121,24 @@
       <module name="craiglist" />
       <extension name="coverage">
         <pattern>
+          <option name="PATTERN" value="Base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Craigslist" />
+      <option name="MAIN_CLASS_NAME" value="Craigslist.SearchPriusTest" />
+      <option name="METHOD_NAME" value="Searching" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPriusTest.Searching" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="craiglist" />
+      <extension name="coverage">
+        <pattern>
           <option name="PATTERN" value="Craigslist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -152,11 +153,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPriusTest.Validation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchPriusTest.Validation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="craiglist" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Craigslist.*" />
+          <option name="PATTERN" value="Base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,7 +175,7 @@
       <module name="craiglist" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Craigslist.*" />
+          <option name="PATTERN" value="Base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,10 +192,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SearchPriusTest" />
+        <item itemvalue="TestNG.SearchPriusTest.Searching" />
         <item itemvalue="TestNG.SearchPriusTest.Validation" />
         <item itemvalue="TestNG.SearchPriusTest.Searching (1)" />
         <item itemvalue="TestNG.SearchPriusTest.Validation (1)" />
-        <item itemvalue="TestNG.SearchPriusTest.Searching" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +247,39 @@
       <option name="project" value="LOCAL" />
       <updated>1724052230081</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added annotation">
+      <option name="closed" value="true" />
+      <created>1724053814821</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724053814821</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added annotation">
+      <option name="closed" value="true" />
+      <created>1724053990735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724053990735</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added annotation">
+      <option name="closed" value="true" />
+      <created>1724054110763</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724054110763</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added annotation">
+      <option name="closed" value="true" />
+      <created>1724054119650</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724054119650</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,6 +298,7 @@
     <MESSAGE value="Removed chrome manager" />
     <MESSAGE value="Added property file and functionality" />
     <MESSAGE value="Added List webelements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added List webelements" />
+    <MESSAGE value="Added annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added annotation" />
   </component>
 </project>

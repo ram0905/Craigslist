@@ -1,4 +1,5 @@
 package Craigslist;
+import Base.BaseTest;
 import Locators.SearchPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -18,7 +19,7 @@ public class SearchPriusTest extends BaseTest {
         searchPage.assertTitle();
 //        searchPage.offerLists1();
         searchPage.search();
-        Thread.sleep(5000);
+//        Thread.sleep(5000);
     }
 
     @Test
