@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Added annotation" />
+    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Added annotationk">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724054119650</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added annotationk">
+      <option name="closed" value="true" />
+      <created>1724094312606</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724094312606</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added annotationk">
+      <option name="closed" value="true" />
+      <created>1724094476744</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724094476744</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +312,7 @@
     <MESSAGE value="Added property file and functionality" />
     <MESSAGE value="Added List webelements" />
     <MESSAGE value="Added annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added annotation" />
+    <MESSAGE value="Added annotationk" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added annotationk" />
   </component>
 </project>
