@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Added annotation">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Craigslist/SearchPriusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Craigslist/SearchPriusTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Added annotation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
