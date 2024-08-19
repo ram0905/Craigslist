@@ -29,6 +29,7 @@ public class SearchPriusTest extends BaseTest {
         for (int i = 0; i < carList.size(); i++) {
             Assert.assertTrue(carList.get(i).getText().toLowerCase().contains("prius"));
         }
+
         System.out.println(carList.size());
 
 
