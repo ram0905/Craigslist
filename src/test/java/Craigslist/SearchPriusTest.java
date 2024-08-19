@@ -1,32 +1,31 @@
 package Craigslist;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import Locators.SearchPage;
 import org.testng.annotations.Test;
-import java.util.List;
-
+import java.io.IOException;
 
 
 public class SearchPriusTest extends BaseTest{
 
-
-
     @Test
-    public void Searching() throws InterruptedException {
-        //		enter searching Data
-        driver.get("https://tampa.craigslist.org/search/cta?");
-        Assert.assertEquals("tampa bay cars & trucks - craigslist", driver.getTitle());
-        WebElement searchField = driver.findElement(By.xpath("//input[@enterkeyhint='search']"));
-        searchField.sendKeys("Prius" + "\n");
-        Thread.sleep(3000);
+    public void Searching() throws IOException, InterruptedException {
+//        loadPropFile();
+        SearchPage searchPage = new SearchPage(driver);
+
+        searchPage.navigateUrl();
+        searchPage.assertTitle();
+//        searchPage.searchElement();
+        searchPage.search();
+        Thread.sleep(5000);
 
 
-        List<WebElement> carList = driver.findElements(By.xpath("//span[contains(text(),'Prius')]"));
-        for ( int i = 0; i < carList.size(); i++){
-            Assert.assertTrue(carList.get(i).getText().toLowerCase().contains("prius"));
-        }
-        System.out.println(carList.size());
 
+//          List<WebElement> carList = driver.findElements(By.xpath("//span[contains(text(),'Prius')]"));
+//          List<WebElement> carList = searchPage.offerLists1();
+//        for ( int i = 0; i < searchPage.offerLists1().size(); i++){
+//            Assert.assertTrue(searchPage.offerLists1().get(i).getText().toLowerCase().contains("prius"));
+//        }
+//        System.out.println(searchPage.offerLists1());
+//
     }
 
 
