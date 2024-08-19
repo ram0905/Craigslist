@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="First">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="27625be7-a8b4-403c-8ceb-4e5482a4160f" name="Changes" comment="Removed chrome manager">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Locators/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators/SearchPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Craigslist/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Craigslist/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Craigslist/SearchPriusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Craigslist/SearchPriusTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +32,26 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ram0905&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="57d3051c-7451-4256-a926-9fa955779ac4" />
+        <option name="url" value="https://github.com/ram0905/Craigslist.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2kl6KHxHGXajLxIjMh1ggYpxirA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -42,18 +62,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.craiglist [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.SearchPriusTest.Searching (1).executor": "Run",
     "TestNG.SearchPriusTest.Searching.executor": "Run",
     "TestNG.SearchPriusTest.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/RR/SPM",
+    "last_opened_file_path": "C:/RR/craiglist/craiglist/src/test/java/Craigslist",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.26034957"
+    "project.structure.side.proportion": "0.26034957",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.SearchPriusTest">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Locators" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SearchPriusTest.Searching">
     <configuration name="SearchPriusTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="craiglist" />
       <extension name="coverage">
@@ -89,10 +117,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchPriusTest.Searching" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="craiglist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Craigslist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Craigslist" />
+      <option name="MAIN_CLASS_NAME" value="Craigslist.SearchPriusTest" />
+      <option name="METHOD_NAME" value="Searching" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SearchPriusTest" />
         <item itemvalue="TestNG.SearchPriusTest.Searching" />
+        <item itemvalue="TestNG.SearchPriusTest" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723847175403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed chrome manager">
+      <option name="closed" value="true" />
+      <created>1723849453081</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723849453081</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +190,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />
-    <option name="LAST_COMMIT_MESSAGE" value="First" />
+    <MESSAGE value="Removed chrome manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed chrome manager" />
   </component>
 </project>
