@@ -1,5 +1,5 @@
 package Locators;
-import Craigslist.BaseTest;
+import Base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -27,7 +27,6 @@ public class SearchPage extends BaseTest {
     public void assertTitle() {
         Assert.assertEquals(title, driver.getTitle());
     }
-
 
 //    public void name() {
 //        driver.get(dataFileTest());
