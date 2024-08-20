@@ -19,18 +19,17 @@ public class SearchPriusTest extends BaseTest {
         searchPage.assertTitle();
 //        searchPage.offerLists1();
         searchPage.search();
-//        Thread.sleep(5000);
-    }
+        searchPage.clickSearchBtn();
+        Thread.sleep(5000);
 
-    @Test
-    public void Validation() {
-        List<WebElement> carList = driver.findElements(By.xpath("//span[contains(text(),'Prius')]"));
-//            List<WebElement> carList = SearchPage.offerLists1();
+//    }
+//       @Test
+//       public void Validation() {
+               List<WebElement> carList = driver.findElements(By.xpath("//span[contains(text(),'Prius')]"));
+//        List<WebElement> carList = driver.findElement(searchPage.offerLists1());
         for (int i = 0; i < carList.size(); i++) {
             Assert.assertTrue(carList.get(i).getText().toLowerCase().contains("prius"));
         }
         System.out.println(carList.size());
-
-
     }
 }
