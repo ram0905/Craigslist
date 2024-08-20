@@ -1,4 +1,5 @@
 package Base;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -12,6 +13,17 @@ public class BaseTest {
 
     public static WebDriver driver = new ChromeDriver();
     public static Properties prop = null;
+
+    public static void loadPropFile() throws IOException {
+        prop = new Properties();
+        FileInputStream fis = new FileInputStream("C:\\RR\\Craigslist\\src\\test\\data.properties");
+        prop.load(fis);
+    }
+
+    public void mouseScroll(){
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,1500)");
+    }
 
     @BeforeTest
     public void setUp() {
@@ -27,13 +39,6 @@ public class BaseTest {
     }
 
 
-
-
-    public static void loadPropFile() throws IOException {
-        prop = new Properties();
-        FileInputStream fis = new FileInputStream("C:\\RR\\Craigslist\\src\\test\\data.properties");
-        prop.load(fis);
-    }
 }
 
 

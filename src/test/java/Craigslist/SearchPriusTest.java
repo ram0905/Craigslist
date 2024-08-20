@@ -19,8 +19,13 @@ public class SearchPriusTest extends BaseTest {
         searchPage.assertTitle();
 //        searchPage.offerLists1();
         searchPage.search();
-//        Thread.sleep(5000);
+        Thread.sleep(5000);
+        mouseScroll();
+
     }
+
+
+
 
     @Test
     public void Validation() {
