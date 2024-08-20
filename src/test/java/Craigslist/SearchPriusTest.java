@@ -21,8 +21,8 @@ public class SearchPriusTest extends BaseTest {
         searchPage.search();
         searchPage.clickSearchBtn();
         Thread.sleep(5000);
-
 //    }
+
 //       @Test
 //       public void Validation() {
                List<WebElement> carList = driver.findElements(By.xpath("//span[contains(text(),'Prius')]"));
