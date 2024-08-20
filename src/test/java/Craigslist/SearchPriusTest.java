@@ -31,6 +31,5 @@ public class SearchPriusTest extends BaseTest {
         }
         System.out.println(carList.size());
 
-
     }
 }
