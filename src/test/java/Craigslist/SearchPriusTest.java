@@ -21,10 +21,10 @@ public class SearchPriusTest extends BaseTest {
         searchPage.search();
         searchPage.clickSearchBtn();
         Thread.sleep(5000);
-//    }
+    }
 
-//       @Test
-//       public void Validation() {
+       @Test
+       public void Validation() {
                List<WebElement> carList = driver.findElements(By.xpath("//span[contains(text(),'Prius')]"));
 //        List<WebElement> carList = driver.findElement(searchPage.offerLists1());
         for (int i = 0; i < carList.size(); i++) {
