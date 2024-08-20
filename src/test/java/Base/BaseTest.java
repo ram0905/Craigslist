@@ -26,6 +26,9 @@ public class BaseTest {
        }
     }
 
+
+
+
     public static void loadPropFile() throws IOException {
         prop = new Properties();
         FileInputStream fis = new FileInputStream("C:\\RR\\Craigslist\\src\\test\\data.properties");
