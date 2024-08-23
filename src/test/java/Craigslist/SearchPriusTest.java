@@ -43,6 +43,7 @@ public class SearchPriusTest extends BaseTest {
 //        System.out.println(driver.findElements(By.xpath("//a[@class='cl-app-anchor text-only posting-title']")));
 //        System.out.println(driver.findElement(By.xpath("//span[contains(text(),'Prius')]")).getAttribute("label"));
 
+
         screenshot();
     }
 }
