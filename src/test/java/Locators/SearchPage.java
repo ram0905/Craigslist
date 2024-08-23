@@ -41,6 +41,8 @@ public class SearchPage extends BaseTest {
         Assert.assertEquals(title, driver.getTitle());
     }
 
+
+
 //        public void name() {
 //        driver.get(dataFileTest());
 //    }
