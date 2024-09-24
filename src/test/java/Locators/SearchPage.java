@@ -7,31 +7,29 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import java.io.IOException;
 import java.util.List;
-
 import static org.openqa.selenium.By.xpath;
-
 
 public class SearchPage extends BaseTest {
 
-    public SearchPage(WebDriver driver) {
+    public SearchPage(WebDriver driver) throws IOException {
+        loadPropFile();
     }
 
     @FindBy (xpath = "//input[@enterkeyhint='search']")
             private WebElement SearchField;
 
-    @FindBy (xpath = "//span[contains(text(),'Prius')]")
-            private WebElement OfferLists;
-
+    @FindBy (xpath = "//span[contains(text(),'Prius')]") private WebElement OfferLists;
 
 
     String title = "tampa bay cars & trucks - craigslist";
+
+    @FindBy (xpath = "//input[@enterkeyhint='search']")
     By searchField = (xpath("//input[@enterkeyhint='search']"));
     By offerLists = (xpath("//span[contains(text(),'Prius')]"));
 
-    public void navigateUrl() throws IOException {
-        loadPropFile();
-        driver.get(prop.getProperty("url"));
-    }
+//    public void navigateUrl(){
+//         driver.get(prop.getProperty("url"));
+//    }
 
     public void search() {
         driver.findElement(searchField).sendKeys(prop.getProperty("item") + "\n");
@@ -41,15 +39,14 @@ public class SearchPage extends BaseTest {
         Assert.assertEquals(title, driver.getTitle());
     }
 
+    public void validOffers() throws InterruptedException {
 
+        List<WebElement> carList = driver.findElements(offerLists);
+        for (int i = 0; i < carList.size(); i++) {
+            Assert.assertTrue(carList.get(i).getText().toLowerCase().contains(prop.getProperty("item")));
+        }
 
-
-//        public void name() {
-//        driver.get(dataFileTest());
-//    }
-//
-    public List<WebElement> offerLists1(){
-        return driver.findElements(offerLists);
+        System.out.println(carList.size());
 
     }
 }

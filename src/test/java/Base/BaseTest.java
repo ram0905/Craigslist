@@ -1,18 +1,16 @@
 package Base;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+
 
 public class BaseTest {
 
@@ -25,22 +23,31 @@ public class BaseTest {
         prop.load(fis);
     }
 
+    public void navigateUrl(){
+        driver.get(prop.getProperty("url"));
+    }
+
+
+
     public void mouseScroll(){
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0,1500)");
+        jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 
     public void screenshot() throws IOException {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
-        FileUtils .copyFile(file, new File(".src/Screenshots/Image.jpeg"));
+        FileUtils.copyFile(file, new File(".src/Screenshots/Image.jpeg"));
 
     }
+
+
+
 
     @BeforeTest
     public void setUp() {
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterTest
