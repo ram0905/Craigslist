@@ -21,15 +21,11 @@ public class SearchPage extends BaseTest {
     @FindBy (xpath = "//span[contains(text(),'Prius')]") private WebElement OfferLists;
 
 
-    String title = "tampa bay cars & trucks - craigslist";
+    String title = "tampa bay cars & trucks for sale - craigslist";
 
     @FindBy (xpath = "//input[@enterkeyhint='search']")
     By searchField = (xpath("//input[@enterkeyhint='search']"));
     By offerLists = (xpath("//span[contains(text(),'Prius')]"));
-
-//    public void navigateUrl(){
-//         driver.get(prop.getProperty("url"));
-//    }
 
     public void search() {
         driver.findElement(searchField).sendKeys(prop.getProperty("item") + "\n");
@@ -45,8 +41,6 @@ public class SearchPage extends BaseTest {
         for (int i = 0; i < carList.size(); i++) {
             Assert.assertTrue(carList.get(i).getText().toLowerCase().contains(prop.getProperty("item")));
         }
-
         System.out.println(carList.size());
-
     }
 }

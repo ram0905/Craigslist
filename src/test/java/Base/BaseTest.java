@@ -27,8 +27,6 @@ public class BaseTest {
         driver.get(prop.getProperty("url"));
     }
 
-
-
     public void mouseScroll(){
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -40,9 +38,6 @@ public class BaseTest {
         FileUtils.copyFile(file, new File(".src/Screenshots/Image.jpeg"));
 
     }
-
-
-
 
     @BeforeTest
     public void setUp() {
