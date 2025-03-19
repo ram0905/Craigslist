@@ -13,7 +13,6 @@ public class SearchPriusTest extends BaseTest {
 
     @Test
     public void SearchingItem() throws IOException, InterruptedException {
-
         navigateUrl();
         searchPage.assertTitle();
         searchPage.search();
