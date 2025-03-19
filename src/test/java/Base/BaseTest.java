@@ -36,7 +36,6 @@ public class BaseTest {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File(".src/Screenshots/Image.jpeg"));
-
     }
 
     @BeforeTest

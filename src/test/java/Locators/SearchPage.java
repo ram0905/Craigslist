@@ -15,12 +15,6 @@ public class SearchPage extends BaseTest {
         loadPropFile();
     }
 
-    @FindBy (xpath = "//input[@enterkeyhint='search']")
-            private WebElement SearchField;
-
-    @FindBy (xpath = "//span[contains(text(),'Prius')]") private WebElement OfferLists;
-
-
     String title = "tampa bay cars & trucks for sale - craigslist";
 
     @FindBy (xpath = "//input[@enterkeyhint='search']")
@@ -36,11 +30,10 @@ public class SearchPage extends BaseTest {
     }
 
     public void validOffers() throws InterruptedException {
-
         List<WebElement> carList = driver.findElements(offerLists);
         for (int i = 0; i < carList.size(); i++) {
             Assert.assertTrue(carList.get(i).getText().toLowerCase().contains(prop.getProperty("item")));
         }
-        System.out.println(carList.size());
+        System.out.println("Total found  " + carList.size());
     }
 }
