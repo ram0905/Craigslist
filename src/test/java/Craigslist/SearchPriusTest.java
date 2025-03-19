@@ -24,7 +24,7 @@ public class SearchPriusTest extends BaseTest {
     }
 
     @Test
-    public void ValidationResults() throws InterruptedException, IOException {
+    public void ValidationResults() {
         searchPage.validOffers();
     }
 }

@@ -29,7 +29,7 @@ public class SearchPage extends BaseTest {
         Assert.assertEquals(title, driver.getTitle());
     }
 
-    public void validOffers() throws InterruptedException {
+    public void validOffers() {
         List<WebElement> carList = driver.findElements(offerLists);
         for (int i = 0; i < carList.size(); i++) {
             Assert.assertTrue(carList.get(i).getText().toLowerCase().contains(prop.getProperty("item")));
