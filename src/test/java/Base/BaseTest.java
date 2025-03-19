@@ -2,7 +2,6 @@ package Base;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import java.io.File;
@@ -36,7 +35,6 @@ public class BaseTest {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File(".src/Screenshots/Image.jpeg"));
-
     }
 
     @BeforeTest

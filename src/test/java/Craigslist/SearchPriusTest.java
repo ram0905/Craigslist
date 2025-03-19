@@ -1,7 +1,6 @@
 package Craigslist;
 import Base.BaseTest;
 import Locators.SearchPage;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
@@ -13,7 +12,7 @@ public class SearchPriusTest extends BaseTest {
     }
 
     @Test
-    public void Searching() throws IOException, InterruptedException {
+    public void SearchingItem() throws IOException, InterruptedException {
 
         navigateUrl();
         searchPage.assertTitle();
@@ -25,7 +24,7 @@ public class SearchPriusTest extends BaseTest {
     }
 
     @Test
-    public void Validation() throws InterruptedException, IOException {
+    public void ValidationResults() {
         searchPage.validOffers();
     }
 }
