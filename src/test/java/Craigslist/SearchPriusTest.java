@@ -11,6 +11,7 @@ public class SearchPriusTest extends BaseTest {
     public SearchPriusTest() throws IOException {
     }
 
+
     @Test
     public void SearchingItem() throws IOException, InterruptedException {
         navigateUrl();
